@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Script</title>
+  </head>
+  <body>
+    <h1>JS Script</h1>
+    <script>
+      let country = "Guinea Bissau";
+      country = country.replace(" ", "-");
+
+      console.log(country);
+
+      let city = "Sydney   ";
+      city = city.trim();
+
+      console.log(city);
+
+      let attraction = "Opera House";
+      attraction = attraction.toLowerCase();
+
+      console.log(attraction);
+
+      let place = "School";
+      place = place.toUpperCase();
+
+      console.log(place);
+
+      let sentence = `I went to visit the ${attraction} in ${city}, right next to my ${place}. Now, I'm getting ready for my trip to ${country}!`;
+    </script>
+  </body>
+</html>
