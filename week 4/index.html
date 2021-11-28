@@ -20,16 +20,18 @@
       src="https://kit.fontawesome.com/be4a75d664.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Weather App Week 2</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
         <h1>Welcome</h1>
-        <form>
+        <form id="search-form">
           <div class="row">
             <div class="col-5">
-              <div class="city">
+              <div class="search">
                 <input
                   type="text"
                   class="form-control"
@@ -41,12 +43,16 @@
             <div class="col-3">
               <input type="submit" value="Search" class="search" />
             </div>
+            <div class="col-3">
+              <button class="current" id="current">Current</button>
+            </div>
           </div>
         </form>
 
         <div class="row align-items-start">
           <div class="col-6">
             <div class="current">
+              <h2 id="city"></h2>
               <h3>Sunday</h3>
               <div class="row">
                 <div class="col">
@@ -74,7 +80,7 @@
                   10%
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-wind wind-icon"></i>
+                  <i class="fas fa-wind wind-icon" id="wind"></i>
                   5 mph
                 </li>
               </ul>

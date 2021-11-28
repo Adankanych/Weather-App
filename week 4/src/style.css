@@ -24,7 +24,8 @@ p {
 .city {
   margin: 20px auto;
 }
-.search {
+.search,
+.current{
   color: #fff;
   background-color: #9fd3c7;
   margin: 20px auto;
